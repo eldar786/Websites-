@@ -1,0 +1,224 @@
+
+<script type="text/javascript" src="js/vendor/slider/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/vendor/slider/js/jssor.slider.min.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        var options = {
+            $AutoPlay: 1,                                   //[Optional] Auto play or not, to enable slideshow, this option must be set to greater than 0. Default value is 0. 0: no auto play, 1: continuously, 2: stop at last slide, 4: stop on click, 8: stop on user navigation (by arrow/bullet/thumbnail/drag/arrow key navigation)
+            $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
+        };
+
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    });
+</script>
+
+
+<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px;
+    height: 300px;">
+    <!-- Slides Container -->
+    <div u="slides" style="position: absolute; left: 0px; top: 0px; width: 600px; height: 300px; overflow: hidden;">
+        <div><img u="image" src="images/1.png" /></div>
+        <div><img u="image" src="images/2.png" /></div>
+        <div><img u="image" src="images/3.png" /></div>
+
+    </div>
+</div>
+
+<div id="jssor_1" style="position: relative;margin: 0px auto;top: 0px;left: 0px;width: 980px;height: 516px;overflow: hidden;visibility: visible;" data-jssor-slider="1">
+            <!-- Loading Screen -->
+            <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div>
+            <div style="position: absolute; display: block; top: 0px; left: 0px; width: 980px; height: 380px;"><div style="position: absolute; display: block; top: 0px; left: 0px; width: 980px; height: 380px;" data-scale-ratio="1"><div data-u="slides" style="cursor: default; position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; overflow: hidden; z-index: 0;"><div style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; z-index: 0; pointer-events: none; display: none;"></div></div><div data-u="slides" style="cursor: default; position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; overflow: hidden; z-index: 0;"><div style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; background-color: rgb(0, 0, 0); opacity: 0; z-index: 0; display: none;"></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(-980px, 0px, 0px);">
+                    <img data-u="image" src="images/1.png" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="images/1.png" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(-980px, 0px, 0px);">
+                    <img data-u="image" src="images/2.png" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/023.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(-980px, 0px, 0px);">
+                    <img data-u="image" src="/demos/img/gallery/980x380/024.jpg" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/024.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(-980px, 0px, 0px);">
+                    <img data-u="image" src="/demos/img/gallery/980x380/025.jpg" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/025.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(-980px, 0px, 0px);">
+                    <img data-u="image" src="/demos/img/gallery/980x380/026.jpg" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/026.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(-980px, 0px, 0px);">
+                    <img data-u="image" src="/demos/img/gallery/980x380/027.jpg" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/027.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(-980px, 0px, 0px);">
+                    <img data-u="image" src="/demos/img/gallery/980x380/021.jpg" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/021.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(-980px, 0px, 0px);">
+                    <img data-u="image" src="/demos/img/gallery/980x380/028.jpg" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/028.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden;">
+                    <img data-u="image" src="/demos/img/gallery/980x380/029.jpg" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/029.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(980px, 0px, 0px);">
+                    <img data-u="image" src="/demos/img/gallery/980x380/030.jpg" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/030.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(-980px, 0px, 0px);">
+                    <img data-u="image" src="/demos/img/gallery/980x380/031.jpg" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/031.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+                <div style="z-index: 1; top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; overflow: hidden; transform: translate3d(-980px, 0px, 0px);">
+                    <img data-u="image" src="/demos/img/gallery/980x380/032.jpg" border="0" style="top: 0px; left: 0px; width: 980px; height: 380px; position: absolute; display: block; z-index: 1;">
+                    <div data-u="thumb" style="display: none; z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/032.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                <div data-u="loading" class="jssorl-009-spin" style="position: absolute; top: 0px; left: 0px; width: 980px; height: 380px; text-align: center; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: none;">
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/theme/svg/loading/static-svg/spin.svg">
+            </div></div>
+            </div></div></div>
+            <!-- Thumbnail Navigator -->
+            <div style="position: absolute; display: block; bottom: 0px; left: 0px; width: 980px; height: 100px;"><div data-u="thumbnavigator" class="jssort111" style="position: absolute; left: 0px; bottom: 0px; width: 980px; height: 100px; cursor: default; visibility: visible; top: 0px;" data-autocenter="1" data-scale-bottom="0.75" data-jssor-thumb="1" data-jssor-slider="1" data-scale-ratio="1">
+                <div style="position: absolute; display: block; top: 0px; left: 0px; width: 980px; height: 100px;"><div style="position: absolute; display: block; top: 0px; left: 0px; width: 980px; height: 100px;" data-scale-ratio="1"><div data-u="slides" style="position: absolute;overflow: hidden;width: 980px;height: 197px;left: 0px;top: 0px;z-index: 0;"><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; display: block; z-index: 0; pointer-events: none; transform: translate3d(-200px, 0px, 0px);"></div></div><div data-u="slides" style="position: absolute;overflow: hidden;width: 980px;height: 100px;left: 0px;top: 0px;z-index: 0;margin-top: 0px;"><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; background-color: rgb(0, 0, 0); opacity: 0; z-index: 0;"></div>
+
+                <div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(-200px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="images/1.png" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(-200px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/023.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(-200px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/024.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(-200px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/025.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(-200px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/026.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(-200px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/027.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(-10px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/021.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(190px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/028.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(390px, 0px, 0px);"><div data-u="prototype" class="p pav" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/029.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(590px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/030.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(790px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/031.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div><div style="z-index: 1; top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; overflow: hidden; transform: translate3d(990px, 0px, 0px);"><div data-u="prototype" class="p" data-jssor-button="1" style="left: 0px; top: 0px; z-index: 1;">
+                        <div data-u="thumb" class="t" style="z-index: 1;">
+                        <img data-u="thumb" src="/demos/img/gallery/980x380/032.jpg/=sample?200x100" style="z-index: 1;">
+                        <div class="ti" style="z-index: 1;">Slide Description</div>
+                    </div>
+                    </div><div style="top: 0px; left: 0px; width: 200px; height: 100px; position: absolute; z-index: 1000; display: none;"></div></div></div></div></div>
+            </div></div>
+            <!-- Arrow Navigator -->
+            <div style="position: absolute; display: block; top: 162px; left: 25px; width: 55px; height: 55px;"><div data-u="arrowleft" class="jssora051" style="width: 55px; height: 55px; top: 0px; left: 0px;" data-scale="0.75" data-jssor-button="1" data-scale-ratio="1">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+            </div></div>
+            <div style="position: absolute; display: block; top: 162px; right: 25px; width: 55px; height: 55px;"><div data-u="arrowright" class="jssora051" style="width: 55px; height: 55px; top: 0px; right: 25px; left: 0px;" data-scale="0.75" data-jssor-button="1" data-scale-ratio="1">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+            </div></div>
+            <div style="position: absolute; display: block; top: 2px; right: 2px; width: 23px; height: 69px;"><div data-interaction="user-commands" class="cmd-box" style="top: 0px; left: 0px; bottom: auto; right: 2px; width: 23px; height: 69px; box-sizing: border-box; visibility: visible;" data-scale=".2" data-scale-top=".5" data-scale-right=".5" data-scale-ratio="1">
+                <div data-command="jssor-getslider" class="cmd-btn" title="get this slider"></div>
+                <div data-command="jssor-qrcode" class="cmd-btn" title="QR code"></div>
+                <div data-command="jssor-share" class="cmd-btn" title="share"></div>
+            </div></div>
+        </div>
